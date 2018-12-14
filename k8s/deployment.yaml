@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: website
+  namespace: website
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: website
+    spec:
+      containers:
+      - name: website
+        image: gcr.io/danrl-com/website:master
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
