@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: basic-ingress
+  namespace: website
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "website-static-ip"
 spec:
