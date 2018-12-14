@@ -15,4 +15,4 @@ spec:
         image: gcr.io/univaiweb/website:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 80
