@@ -9,7 +9,7 @@ before_script:
   - apk add --update make ca-certificates openssl python
   - update-ca-certificates
   # Write our GCP service account private key into a file
-  - echo $GCR_CI_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+  - echo $GCR_CI_SERVICE_KEY > ${HOME}/gcr-ci-service-key.json
   # Download and install Google Cloud SDK
   - wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz
   - tar zxvf google-cloud-sdk.tar.gz && ./google-cloud-sdk/install.sh --usage-reporting=false --path-update=true
