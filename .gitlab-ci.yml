@@ -15,7 +15,7 @@ before_script:
   - tar zxvf google-cloud-sdk.tar.gz && ./google-cloud-sdk/install.sh --usage-reporting=false --path-update=true
   - google-cloud-sdk/bin/gcloud --quiet components update
   - google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/gcr-ci-service-key.json
-  - docker login -u _json_key -p $GCR_CI_SERVICE_KEY https://gcr.io
+  - docker login -u _json_key -p "$GCR_CI_SERVICE_KEY" https://gcr.io
 
 stages:
   - publish
