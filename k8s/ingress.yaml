@@ -6,5 +6,5 @@ metadata:
     kubernetes.io/ingress.global-static-ip-name: "website-static-ip"
 spec:
   backend:
-    serviceName: website
+    serviceName: website-service
     servicePort: 8080
