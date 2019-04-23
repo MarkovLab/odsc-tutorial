@@ -11,8 +11,7 @@ spec:
         app: website
     spec:
       containers:
-      - name: website
-        image: gcr.io/univaiweb/website:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
+        - name: website
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
