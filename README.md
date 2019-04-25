@@ -1,15 +1,3 @@
-<style>
-  .img {
-    width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-left: 2px solid grey;
-  }
-</style>
-
 # Introduction to Kubernetes on Google Kubernetes Engine
 
 In this section of the tutorial, we will go over steps to deploy Kubernetes clusters
@@ -21,18 +9,18 @@ There are several options when deploying Kubernetes clusters.
 
 Local / Development:
 
-- Minikube (https://kubernetes.io/docs/setup/minikube/)
+- [Minikube](https://kubernetes.io/docs/setup/minikube/)
 
 While Minikube is helpful for development and experimentation, you would use one of
 many cloud computing providers.
 
 Cloud / Production:
 
-- Google Kubernetes Engine (GKE) (https://cloud.google.com/kubernetes-engine/)
+- [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine/)
 
-- Amazon Elastic Container Service for Kubernetes (EKS) (https://aws.amazon.com/eks/)
+- [Amazon Elastic Container Service for Kubernetes (EKS)](https://aws.amazon.com/eks/)
 
-- Microsoft Azure Container Service (AKS) (https://azure.microsoft.com/en-us/services/kubernetes-service/)
+- [Microsoft Azure Container Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/)
 
 We will be using Google Kubernetes Engine in this tutorial. There are two reasons for
 this choice:
