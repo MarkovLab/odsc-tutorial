@@ -402,7 +402,7 @@ gcloud container images delete gcr.io/<project-name>/<image>:<tag>  --force-dele
 
 ## Resources
 
-There are numerous resources to learn more about Kubernetes.
+There are many online resources to learn more about Kubernetes. Here are a few:
 
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
