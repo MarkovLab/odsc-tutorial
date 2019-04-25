@@ -382,21 +382,17 @@ Google will charge you computing and storage resources used by GKE and other API
 
 In the Cloud Shell, run:
 
-`$ gcloud container clusters delete website`
+`$ gcloud container clusters delete website --zone us-central1-a`
 
 This will delete our Kubernetes cluster and delete all pods and services within it.
 
 Additionally, let's delete the static IP we created for the website.
 
-```
-gcloud compute addresses delete web-static-ip --global
-```
+`$ gcloud compute addresses delete web-static-ip --global`
 
 Finally, delete the Docker image saved in the Container Registry.
 
-```
-gcloud container images delete gcr.io/<project-name>/<image>:<tag>  --force-delete-tags
-```
+`$ gcloud container images delete gcr.io/<project-name>/<image>:<tag> --force-delete-tags`
 
 ---
 
